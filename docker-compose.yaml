@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8069:8069"
+    depends_on:
+      - storage
+    links:
+      - storage
+
+  storage:
+    build:
+      context: .
+      dockerfile: Dockerfile.storage
+    volumes:
+      - ./storage.json:/app/storage.json
+    # Add any additional configurations as needed

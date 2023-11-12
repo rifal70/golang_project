@@ -1,0 +1,14 @@
+# Use a lightweight alpine image
+FROM alpine:latest
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the local storage code to the container
+COPY storage.json .
+
+# Expose any necessary port (if applicable)
+# EXPOSE 5432
+
+# Command to run the storage service
+CMD ["tail", "-f", "/dev/null"]

@@ -1,0 +1,10 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "lion",
+      "class": "mammal",
+      "legs": 4
+    }
+  ]
+}
