@@ -1,6 +1,5 @@
-# Nama Proyek
-
-Deskripsi singkat proyek.
+# Anekazoo
+Endpoint untuk melihat, menambah, menghapus data hewan.
 
 ## Menjalankan Aplikasi
 
